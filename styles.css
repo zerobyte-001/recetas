@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #faf5f0;
+  color: #4a3e3d;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 16px; /* Tamaño base cómodo para móviles */
+}
+
+/* --- HEADER & NAVEGACIÓN --- */
+header {
+  background-color: #6b2b19;
+  color: white;
+  padding: 1.2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+  padding: 1.5rem 1rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  color: #3d3130;
+}
+
+/* --- CUADRÍCULA DE TARJETAS --- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- DETALLE DE LA RECETA --- */
+.receta-detalle {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.receta-detalle h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #e07a5f;
+  font-size: 1.3rem;
+}
+
+.receta-detalle ul, 
+.receta-detalle ol {
+  padding-left: 1.2rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.receta-detalle li {
+  margin-bottom: 0.5rem;
+}
+
+.observacion {
+  background-color: #fefae0;
+  border-left: 5px solid #dda15e;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* --- AJUSTES ESPECÍFICOS PARA MÓVILES (Pantallas < 600px) --- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  /* Las tarjetas se expanden al ancho casi total de la pantalla */
+  .grid-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+}
