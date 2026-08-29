@@ -307,7 +307,7 @@ const recetas = {
       intro: ".",
       ingredientes: ["BIZCOCHO DE ENCANELADO:***","HUEVOS 4 UD","AZUCAR 120 G","VAINILLA 2 G","CANELA EN POLVO 2 G","HARINA 84 G",
 "****ALMIBAR AL PISCO:****","AGUA 100 ML","AZUCAR 100 G","PISCO 50 ML","CANELA EN RAMA 3 G","****NATILLA PIURANA:****",
-"LECHE FRESCA 250 ML","CHANCACA 100 G","BICARBONATO 1 G"],
+"LECHE FRESCA 250 ML","CHANCACA 100 G","BICARBONATO 1 G",],
       pasos: ["****Encanelado:****",
 "Batir los huevos con el azúcar hasta punto cinta. Agregar los ingredientes secos tamizados en forma envolvente. Vaciar el bizcocho sobe papel manteca.",
 "Llevar al horno a 180°C por 10/12 minutos. Cortar tres rectángulos.",
