@@ -274,7 +274,8 @@ const recetas = {
 "Reservar envuelto en papel film en el frio.",
 "Dividir en 4 partes, pintar con colorante alimentario pesar bolitas de 15 gramos, formar las frutas o formas deseadas.",],
       observaciones: "."
-    },{
+    },
+    {
       id: "Cachangas",
       nombre: "Cachangas",
       intro: ".",
@@ -301,7 +302,7 @@ const recetas = {
       observaciones: "."
     },
     {
-      id: "Natilla ",
+      id: "Natilla",
       nombre: "Natilla piurana y encanelado",
       intro: ".",
       ingredientes: ["BIZCOCHO DE ENCANELADO:***","HUEVOS 4 UD","AZUCAR 120 G","VAINILLA 2 G","CANELA EN POLVO 2 G","HARINA 84 G",
